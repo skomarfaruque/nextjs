@@ -1,0 +1,14 @@
+{
+  "apps" : [    
+  {
+    "name"        : "crewfire",
+    "script"      : "npm",
+    "watch"       : true,
+    "ignore_watch": ["node_modules", "public", ".next"],
+    "args"        : "start",
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }]
+}
+

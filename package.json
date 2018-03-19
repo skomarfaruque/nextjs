@@ -1,0 +1,42 @@
+{
+  "name": "Sample react next project",
+  "version": "0.0.1",
+  "description": "Instagam api",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server",
+    "build": "next build",
+    "start": "npm run build && node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.4.3",
+    "cookie": "^0.3.1",
+    "glob": "^7.1.2",
+    "isomorphic-fetch": "^2.2.1",
+    "js-cookie": "^2.1.4",
+    "koa": "^2.3.0",
+    "koa-router": "^7.2.1",
+    "next": "^3.0.1-beta.13",
+    "next-redux-wrapper": "^1.2.0",
+    "nprogress": "^0.2.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.1",
+    "redux-thunk": "^2.2.0",
+    "moment": "^2.18.1",
+    "react-moment": "^0.6.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "babel-plugin-module-resolver": "2.5.0",
+    "postcss-easy-import": "^2.1.0",
+    "postcss-loader": "^2.0.6",
+    "raw-loader": "^0.5.1",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6"
+  },
+  "false": {}
+}

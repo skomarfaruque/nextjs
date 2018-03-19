@@ -1,0 +1,53 @@
+$image-size: 640px
+
+.image-block
+  .level
+    margin-bottom: .2rem
+  .image-block-stat
+    span
+      margin-left: 3px
+      font-size: 1rem
+      position: relative
+      top: -2px
+  .is-rounded
+    border-radius: 2rem
+
+.navigation-arrow
+  .icon
+    position: absolute
+    top: 50%
+    &.left
+      left: -40px
+    &.right
+      right: -40px
+.image-box
+  .modal-content, .modal-card  
+    background-color: white
+    +mq($from: desktop)
+      width: $image-size + $image-size/2 + 12px
+      max-height: $image-size
+      height: $image-size
+      overflow: initial
+
+.comment-side
+  margin-right: 1.2rem
+  .columns
+    margin-top: 0
+  .level
+    margin-bottom: 0.2rem
+  .card
+    margin-top: .75rem
+    .user-icon
+      font-size: 26px
+      vertical-align: middle  
+  .user-profile
+    text-align: center
+    margin-top: 0.75rem
+    img
+      width: 3rem
+      height: 3rem
+      border: 1px solid #e1e1e1
+      border-radius: 25px
+      padding: 2px
+    .label
+      text-transform: uppercase

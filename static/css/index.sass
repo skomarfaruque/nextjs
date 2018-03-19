@@ -1,0 +1,159 @@
+@import mq
+@import 'header'
+@import imageblock
+@import home
+@import login
+@import search
+$large-width: 10rem
+
+.flex-fix
+  flex: 1
+
+.home-page
+  margin-top: 200px !important
+
+.home-mid
+  padding-bottom: 50px
+  .home-title
+    font-size: 18px
+
+
+.search-icon
+  font-size: 30px
+  padding-top: 8px
+  cursor: pointer
+
+.user-icon
+  font-size: 45px
+
+.user-smicon
+  font-size: 37px !important
+
+.level 
+  margin-bottom: 2px !important
+
+.fa-heart
+  font-size: 24px
+
+.fa-comments
+  font-size: 24px
+
+.date-arrow
+  padding-top: 5px
+
+.date-space
+  padding-left: 10px
+
+.button-space
+  margin-left: 10px
+
+.button-space1
+  margin-left: 37px
+
+.date-margin
+  margin-bottom: 0px !important
+  margin-top: 10px
+
+.search-img
+  width: 100% !important
+  height: auto
+
+.lolobyte
+  text-align: center
+
+//modal
+.close-icon
+  font-size: 40px
+  padding-right: 15px
+
+.modal-body 
+  margin-top: 50px
+  background: #fff
+
+.modal-body
+  .modal-img
+    width: 100%
+
+.modal-field
+  margin-top: 10px
+
+.user-mdicon
+  margin-top: -50px
+
+// Dropdown
+
+.has-dropdown
+  input[type="checkbox"] 
+    display: none
+    &:checked 
+      ~ .dropdown
+        display: block
+  a
+    padding: 0
+    label
+      cursor: pointer
+
+
+/* dropdown basic */
+.dropdown 
+  display: none
+  position: absolute
+  width: 10rem
+  right: 0
+  top: 3rem
+  z-index: 9999
+  background-color: white
+  border-radius: 5px
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1)
+  h2
+    padding: .5rem .5rem 1rem .5rem
+    border-bottom: 1px solid rgba(10, 10, 10, 0.1)
+  li
+    padding: .5rem
+    &:hover
+      background-color: #eee
+      cursor: pointer
+img
+  &.is-rounded
+    border-radius: 2rem
+
+/* React Modal */
+
+.ReactModal__Overlay 
+  -webkit-perspective: 600
+  perspective: 600
+  opacity: 0
+  overflow-x: hidden
+  overflow-y: auto
+  background-color: rgba(0, 0, 0, 0.5)
+
+
+.ReactModal__Overlay--after-open 
+  opacity: 1
+  transition: opacity 150ms ease-out
+
+
+.ReactModal__Content 
+  -webkit-transform: scale(0.5) rotateX(-30deg)
+  transform: scale(0.5) rotateX(-30deg)
+
+
+.ReactModal__Content--after-open 
+  -webkit-transform: scale(1) rotateX(0deg)
+  transform: scale(1) rotateX(0deg)
+  transition: all 150ms ease-in
+
+
+.ReactModal__Overlay--before-close 
+  opacity: 0
+
+
+.ReactModal__Content--before-close 
+  -webkit-transform: scale(0.5) rotateX(30deg)
+  transform: scale(0.5) rotateX(30deg)
+  transition: all 150ms ease-in
+
+
+.ReactModal__Content.modal-dialog 
+  border: none
+  background-color: transparent
